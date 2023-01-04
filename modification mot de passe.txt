@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Inscription</title>
+  
+<style>
+  /* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  border: 1px solid #ddd;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 1em;
+  height: 40px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-control:focus {
+  border-color: #00cc99; /* couleur verte claire */
+  box-shadow: 0 0 5px #00cc99; /* couleur verte claire */
+  outline: none;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #999;
+}
+
+.form-control::-moz-placeholder {
+  color: #999;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #999;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #999;
+}
+
+.form-control::placeholder {
+  color: #999;
+}
+
+.btn {
+  border: none;
+  border-radius: 0;
+  font-size: 1em;
+  font-weight: bold;
+  height: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #00cc99; /* couleur verte claire */
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #00b387; /* couleur verte plus foncée */
+  cursor: pointer;
+}
+
+.btn-primary:active {
+  background-color: #009e75; /* couleur verte encore plus foncée */
+}
+</style>
+
+  
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Modification de mot de passe</h1>
+    <form>
+      <div class="form-group">
+        <div class="class">
+          <label for="username">Nom d'utilisateur</label>
+          <input type="text" class="form-control" id="username" placeholder="Entrez votre nom d'utilisateur">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-6">
+          <label for="password">Nouveau mot de passe</label>
+          <input type="password" class="form-control" id="password" placeholder="Entrez votre mot de passe">
+        </div>
+        <div class="col-sm-6">
+          <label for="password">Code à 4 chiffres*</label>
+          <input type="password" class="form-control" id="password" placeholder="Entrez votre code à 4 chiffres">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Envoyer</button>
+    </form>
+  </div>
+</body>
+</html>
