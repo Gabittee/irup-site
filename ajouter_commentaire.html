@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Ajouter un commentaire</title>
+  
+  <link rel="stylesheet" href="formulaire.css" type="text/css" media="screen" />
+  
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Ajouter un commentaire</h1>
+    <form>
+
+        <div class="form-group row">
+            <div class="col-sm-6">
+              <label for="date">Date</label>
+              <input type="date" class="form-control" id="date">
+            </div>
+            <div class="col-sm-6">
+              <label for="status">Classe</label>
+              <select class="form-control" id="status">
+                <option>btssn</option>
+                <option>segpa</option>
+                <option>trisomique</option>
+              </select>
+            </div>
+          </div>
+          
+      <div class="form-group">
+        <label for="commentaire">Commentaire</label>
+        <input type="commentaire" class="form-control" id="commentaire" placeholder="Entrez votre commentaire" style="height: 120px;">
+      </div>
+      <button type="submit" class="btn btn-primary">Envoyer</button>      
+    </form>
+  </div>
+</body>
+</html>

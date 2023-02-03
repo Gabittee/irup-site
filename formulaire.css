@@ -36,8 +36,8 @@ body {
   }
   
   .form-control:focus {
-    border-color: #0066cc;
-    box-shadow: 0 0 5px #0066cc;
+    border-color: #06680f;
+    box-shadow: 0 0 5px #067932;
     outline: none;
   }
   
@@ -73,17 +73,17 @@ body {
   }
   
   .btn-primary {
-    background-color: #0066cc;
+    background-color: #1ebb45;
     color: #fff;
   }
   
   .btn-primary:hover {
-    background-color: #005fbf;
+    background-color: #199b3a;
     cursor: pointer;
   }
   
   .btn-primary:active {
-    background-color: #0055aa;
+    background-color: #13722a;
   }
   
   .form-group.row {
@@ -110,5 +110,11 @@ body {
 
   .custom-navbar {
     background-color: #00FF00;
+  }
+
+  .name{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
   }
   
