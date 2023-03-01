@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ma page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
+    .card {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .form-control {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card bg-success">
+          <div class="card-body">
+            <h5 class="card-title">Du :</h5>
+            <input class="form-control" type="date" id="start" name="trip-start" value="2023-01-01" min="2023-01-01" max="2030-12-31">
+            <h5 class="card-title">au :</h5>
+            <input class="form-control" type="date" id="end" name="trip-end" value="2023-01-01" min="2023-01-01" max="2030-12-31">
+            <h5 class="card-title">Classe :</h5>
+            <select class="form-control" name="classe" id="classe-select">
+              <option value="BTSS21">BTSS21</option>
+              <option value="BTSS22">BTSS22</option>
+            </select>
+            <button class="btn btn-primary" type="submit">Envoyer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <table class="table table-dark table-striped">
+            <thead>
+              <tr>
+                <th>Nom</th>
+                <th>Classe</th>
+                <th>Temps</th>
+                <th>Justification</th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php for($i=1; $i<=10; $i++) { ?>
+                <tr>
+                  <td>Nom <?php echo $i; ?></td>
+                  <td>Classe <?php echo $i; ?></td>
+                  <td>Temps <?php echo $i; ?></td>
+                  <td>Justification <?php echo $i; ?></td>
+                </tr>
+              <?php } ?>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
